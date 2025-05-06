@@ -4,11 +4,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 
-
-
-
-
-
 export default function LeftSide() {
 
     const [hovered, setHovered] = useState<number | null>(null);
