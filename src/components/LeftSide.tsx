@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -7,6 +7,7 @@ import { FaGoogle } from "react-icons/fa";
 export default function LeftSide() {
 
     const [hovered, setHovered] = useState<number | null>(null);
+    const [activeSection, setActiveSection] = useState("about");
 
     const icons = [
         { icon: <FaGithub />, name: "github" },
@@ -14,6 +15,20 @@ export default function LeftSide() {
         { icon: <FaInstagram />, name: "instagram" },
         { icon: <FaGoogle />, name: "google" },
     ];
+
+    useEffect(() => {
+        const sections = document.querySelectorAll("section");
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                })
+            },
+            { threshold: 0.6 }
+        )
+    }, [])
 
     return (
         <div className=" pl-85 py-18 ">
@@ -26,8 +41,7 @@ export default function LeftSide() {
             <div className="py-18">
                 <ul className="flex flex-col uppercase text-sm font-bold text-gray-400">
                     <li className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
-                        <span className="after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">About</span>
-
+                        <span className={`after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full ${activeSection === 'about' ? 'text-white h-[2px] w-0' : ''}`}>About</span>
                     </li>
                     <li className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
                         <span className="after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Projects</span>
