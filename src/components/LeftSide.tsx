@@ -53,10 +53,10 @@ export default function LeftSide() {
                         onMouseEnter={() => setHovered(index)}
                         onMouseLeave={() => setHovered(null)}
                         className={`cursor-pointer transition-transform duration-300 ${hovered === index
-                                ? "scale-125 text-white"
-                                : hovered !== null
-                                    ? "scale-90"
-                                    : "scale-100"
+                            ? "scale-125 text-white"
+                            : hovered !== null
+                                ? "scale-90"
+                                : "scale-100"
                             }`}
                     >
                         {item.icon}
