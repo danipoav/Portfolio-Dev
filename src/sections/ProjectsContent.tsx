@@ -1,6 +1,6 @@
 
 export default function ProjectsContent() {
   return (
-    <div>ProjectsContent</div>
+    <section id="projects" className=" mb-500">ProjectsContent</section>
   )
 }

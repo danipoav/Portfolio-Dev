@@ -1,7 +1,7 @@
 
 export default function AboutContent() {
     return (
-        <section id="about">
+        <section id="about" className="scroll-mt-24">
             <h1 className="text-gray-400 text-justify mb-4 flex">
                 <div>
                 I'm a <span className="text-white hover:text-blue-200">passionate</span> and <span className="text-white">dedicated</span> web developer who thrives on turning ideas into engaging, user-friendly digital experiences. With a strong sense of curiosity and a deep commitment to learning, I’ve spent the last few years honing my craft by building and refining a variety of projects from personal experiments to collaborative products.
