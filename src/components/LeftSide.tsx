@@ -51,15 +51,29 @@ export default function LeftSide() {
 
             <div className="py-18">
                 <ul className="flex flex-col uppercase text-sm font-bold text-gray-400">
-                    <li onClick={() => scrollToSection('about')} className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
-                        <span className={`after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full ${activeSection === 'about' ? 'text-white content-[""] h-[2px] w-0' : ''}`}>About</span>
+                    <li
+                        onClick={() => scrollToSection('about')}
+                        className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
+                        <span
+                            className={`after:content-[''] after:block after:h-[2px] after:bg-white after:transition-all after:duration-300 ${activeSection === 'about' ? 'text-white after:w-full translate-x-1' : 'after:w-0'}`}>
+                            About
+                        </span>
                     </li>
-                    <li onClick={()=>scrollToSection('projects')} className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
-                        <span className="after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Projects</span>
+                    <li
+                        onClick={() => scrollToSection('projects')}
+                        className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
+                        <span
+                            className={`after:content-[''] after:block after:h-[2px] after:bg-white after:transition-all after:duration-300 ${activeSection === 'projects' ? 'text-white after:w-full translate-x-1' : 'after:w-0'}`}>
+                            Projects
+                        </span>
                     </li>
-                    <li className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
-                        <span className="after:content-[''] after:block after:h-[2px] after:w-0 after:bg-white after:transition-all after:duration-300 hover:after:w-full">Experience</span>
-
+                    <li
+                        onClick={() => scrollToSection('about')}
+                        className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
+                        <span
+                            className={`after:content-[''] after:block after:h-[2px] after:bg-white after:transition-all after:duration-300 ${activeSection === 'experience' ? 'text-white after:w-full translate-x-1' : 'after:w-0'}`}>
+                            Experience
+                        </span>
                     </li>
                 </ul>
             </div>
