@@ -19,7 +19,7 @@ export default function ProjectCard({
     techStack = []
 }: ProjectProps) {
     return (
-        <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
+        <div className="bg-gray-800 py-10 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
             {video ? (
                 <video
                     src={video}

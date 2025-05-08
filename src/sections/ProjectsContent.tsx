@@ -4,31 +4,33 @@ export default function ProjectsContent() {
 
   const projects = [
     {
-      title: "Hotel Dashboard",
-      description: "A full-featured dashboard with CRUD operations for bookings and rooms.",
+      title: "Hotel Management Dashboard",
+      description: "A full-stack hotel management system built with Laravel, featuring CRUD operations for bookings, rooms, and users, with authentication and role-based access control.",
       video: "../../Hotel.mp4",
-      url: "https://your-live-link.com",
-      repo: "https://github.com/yourrepo",
-      techStack: ["React", "TypeScript", "Redux", "Node.js"],
+      url: "http://13.37.222.106/",
+      repo: "https://github.com/danipoav/Laravel-Hotel",
+      techStack: ["Laravel", "PHP", "MySQL", "Blade", "Bootstrap"],
     },
     {
       title: "Subs App",
-      description: "Modern e-commerce front-end with shopping cart and Stripe integration.",
+      description: "A web application that allows users to track and manage their recurring subscriptions. Includes features like adding services, setting renewal dates, viewing costs, and deleting or editing entries.",
       video: "../../Subs.mp4",
-      repo: "https://github.com/yourecommerce",
-      techStack: ["React", "Tailwind", "Firebase"],
+      url: "http://subs-page.s3-website.eu-west-3.amazonaws.com/",
+      repo: "https://github.com/danipoav/Subs-app",
+      techStack: ["React", "Tailwind", "Redux", "TypeScript", "MySQL"],
     },
     {
-      title: "Portfolio Website",
-      description: "Personal portfolio site with animated transitions and responsive layout.",
+      title: "Hotel Management Dashboard",
+      description: "A full-featured admin dashboard for managing hotel operations. Includes user authentication, CRUD functionalities for bookings, users, and rooms, with real-time status indicators and a responsive interface.",
       video: "../../Subs-2.mp4",
-      url: "https://yourportfolio.com",
-      techStack: ["React", "TailwindCSS"],
+      url: "http://hotel-db.s3-website.eu-west-3.amazonaws.com/",
+      repo: "https://github.com/danipoav/DB-hotel",
+      techStack: ["React", "TypeScript", "Redux Toolkit", "TailwindCSS", "REST API", "Laravel (Backend)"],
     },
   ]
 
   return (
-    <section id="projects" className=" mb-500">
+    <section id="projects" className="scroll-mt-10 mb-500">
       {projects.map((project, i) => (
         <ProjectCard key={i} {...project} />
       ))}
