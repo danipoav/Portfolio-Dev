@@ -16,11 +16,11 @@ export default function MainLayout() {
 
     if (loading) {
         return (
-            <div className="flex items-center justify-center h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 transition-all duration-1000">
-            <h1 className="text-white text-4xl md:text-5xl font-extrabold tracking-widest animate-fade-in-out">
-                Danis Projects
-            </h1>
-        </div>
+            <div className="flex items-center justify-center h-screen bg-gray-800">
+                <h1 className="text-white text-4xl md:text-5xl font-extrabold tracking-widest animate__animated animate__fadeInDown">
+                    Danis Projects
+                </h1>
+            </div>
         )
     }
 

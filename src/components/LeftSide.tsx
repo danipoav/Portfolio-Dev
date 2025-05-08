@@ -43,7 +43,7 @@ export default function LeftSide() {
 
     return (
         <div className=" pl-85 py-18 ">
-            <h1 className=" text-6xl font-bold">Daniel Poveda</h1>
+            <h1 className=" text-6xl font-bold">Daniel <span className=" text-gray-400">Poveda</span></h1>
 
             <h2 className=" text-2xl pt-4 font-semibold">Full Stack Engineer</h2>
 
