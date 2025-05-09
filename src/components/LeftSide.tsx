@@ -10,10 +10,10 @@ export default function LeftSide() {
     const [activeSection, setActiveSection] = useState("about");
 
     const icons = [
-        { icon: <FaGithub />, name: "github" },
-        { icon: <FaLinkedin />, name: "linkedin" },
-        { icon: <FaInstagram />, name: "instagram" },
-        { icon: <FaGoogle />, name: "google" },
+        { icon: <FaGithub />, name: "github", link: 'https://github.com/danipoav' },
+        { icon: <FaLinkedin />, name: "linkedin", link: "https://www.linkedin.com/in/danipoav" },
+        { icon: <FaInstagram />, name: "instagram", link: "https://www.instagram.com/danipoav/" },
+        { icon: <FaGoogle />, name: "google", link: "mailto:dapoav2002@gmail.com" },
     ];
 
     useEffect(() => {
@@ -43,7 +43,7 @@ export default function LeftSide() {
 
     return (
         <div className=" pl-85 py-18 ">
-            <h1 className=" text-6xl font-bold">Daniel <span className=" text-gray-400">Poveda</span></h1>
+            <h1 className=" text-6xl font-bold">Daniel Poveda</h1>
 
             <h2 className=" text-2xl pt-4 font-semibold">Full Stack Engineer</h2>
 
@@ -81,10 +81,12 @@ export default function LeftSide() {
 
             <div className="mt-60 flex gap-4 text-3xl">
                 {icons.map((item, index) => (
-                    <div
+                    <a
                         key={index}
                         onMouseEnter={() => setHovered(index)}
                         onMouseLeave={() => setHovered(null)}
+                        href={item.link}
+                        target="_blank"
                         className={`cursor-pointer transition-transform duration-300 ${hovered === index
                             ? "scale-125 text-white"
                             : hovered !== null
@@ -93,7 +95,7 @@ export default function LeftSide() {
                             }`}
                     >
                         {item.icon}
-                    </div>
+                    </a>
                 ))}
             </div>
         </div>
