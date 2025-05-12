@@ -19,7 +19,7 @@ export default function ProjectCard({
     techStack = []
 }: ProjectProps) {
     return (
-        <div className="bg-gray-800 py-10 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105 duration-300">
+        <div className="bg-gray-800 pb-5 mb-5 rounded-lg overflow-hidden shadow-xl transition-transform hover:scale-105 duration-300 hover:bg-gray-700">
             {video ? (
                 <video
                     src={video}
@@ -44,7 +44,7 @@ export default function ProjectCard({
                 {techStack.length > 0 && (
                     <ul className="flex flex-wrap gap-2 text-xs text-gray-400 mb-4">
                         {techStack.map((tech, idx) => (
-                            <li key={idx} className="bg-gray-700 px-2 py-1 rounded">
+                            <li key={idx} className="bg-gray-600 px-2 py-1 rounded">
                                 {tech}
                             </li>
                         ))}
