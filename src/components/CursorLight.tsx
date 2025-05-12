@@ -17,7 +17,7 @@ export default function SpotlightLayout({ children }: { children: React.ReactNod
       <div
         className="pointer-events-none fixed top-0 left-0 w-full h-full z-50"
         style={{
-          background: `radial-gradient(500px at ${position.x}px ${position.y}px, rgba(255, 255, 255, 0.295), transparent)`,
+          background: `radial-gradient(500px at ${position.x}px ${position.y}px, rgba(255, 255, 255, 0.384), transparent)`,
           mixBlendMode: "soft-light",
         }}
       />
