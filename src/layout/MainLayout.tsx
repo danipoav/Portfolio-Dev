@@ -4,7 +4,7 @@ import LeftSide from "../components/LeftSide";
 import RightSide from "../components/RightSide";
 
 export default function MainLayout() {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [animateOut, setAnimateOut] = useState(false);
     const [mounted, setMounted] = useState(false);
 

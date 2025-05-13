@@ -8,6 +8,7 @@ export default function LeftSide() {
 
     const [hovered, setHovered] = useState<number | null>(null);
     const [activeSection, setActiveSection] = useState("about");
+    const [isVisible, setIsVisible] = useState(false);
 
     const icons = [
         { icon: <FaGithub />, name: "github", link: 'https://github.com/danipoav' },
