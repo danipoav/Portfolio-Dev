@@ -1,11 +1,13 @@
 import AboutContent from "../sections/AboutContent";
+import ExperienceContent from "../sections/ExperienceContent";
 import ProjectsContent from "../sections/ProjectsContent";
 
 export default function RightSide() {
   return (
     <div className="pt-18 pr-85">
-      <AboutContent/>
-      <ProjectsContent/>
+      <AboutContent />
+      <ProjectsContent />
+      <ExperienceContent />
     </div>
   )
 }
