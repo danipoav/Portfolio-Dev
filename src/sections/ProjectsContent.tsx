@@ -30,7 +30,7 @@ export default function ProjectsContent() {
   ]
 
   return (
-    <section id="projects" className="scroll-mt-10 mb-30">
+    <section id="projects" className="scroll-mt-10 mb-25">
       {projects.map((project, i) => (
         <ProjectCard key={i} {...project} />
       ))}
