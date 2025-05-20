@@ -17,7 +17,7 @@ export default function ProjectsContent() {
       video: "../../Subs.mp4",
       url: "http://subs-page.s3-website.eu-west-3.amazonaws.com/",
       repo: "https://github.com/danipoav/Subs-app",
-      techStack: ["React", "Tailwind", "Redux", "TypeScript", "MySQL"],
+      techStack: ["React", "TailwindCSS", "Redux", "TypeScript", "MySQL"],
     },
     {
       title: "Hotel Management Dashboard",
@@ -25,12 +25,12 @@ export default function ProjectsContent() {
       video: "../../Subs-2.mp4",
       url: "http://hotel-db.s3-website.eu-west-3.amazonaws.com/",
       repo: "https://github.com/danipoav/DB-hotel",
-      techStack: ["React", "TypeScript", "Redux Toolkit", "TailwindCSS", "REST API", "Laravel (Backend)"],
+      techStack: ["React", "TypeScript", "Redux Toolkit", "REST API", "Laravel (Backend)"],
     },
   ]
 
   return (
-    <section id="projects" className="scroll-mt-10 mb-25">
+    <section id="projects" className="scroll-mt-32 mb-25 ">
       {projects.map((project, i) => (
         <ProjectCard key={i} {...project} />
       ))}

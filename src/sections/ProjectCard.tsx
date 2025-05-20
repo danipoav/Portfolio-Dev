@@ -27,7 +27,7 @@ export default function ProjectCard({
                     loop
                     muted
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-[260px] object-cover"
                 />
             ) : (
                 <img
@@ -41,27 +41,21 @@ export default function ProjectCard({
                 <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
                 <p className="text-sm mb-4">{description}</p>
 
-                {techStack.length > 0 && (
-                    <ul className="flex flex-wrap gap-2 text-xs text-gray-400 mb-4">
-                        {techStack.map((tech, idx) => (
-                            <li key={idx} className="bg-gray-600 px-2 py-1 rounded">
-                                {tech}
-                            </li>
-                        ))}
-                    </ul>
-                )}
+                <ul className="flex flex-wrap gap-2 text-xs text-gray-400 mb-4">
+                    {techStack.map((tech, idx) => (
+                        <li key={idx} className="bg-gray-600 px-2 py-1 rounded">
+                            {tech}
+                        </li>
+                    ))}
+                </ul>
 
                 <div className="flex gap-4">
-                    {url && (
-                        <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                            Live Demo
-                        </a>
-                    )}
-                    {repo && (
-                        <a href={repo} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
-                            GitHub
-                        </a>
-                    )}
+                    <a href={url} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                        Live Demo
+                    </a>
+                    <a href={repo} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                        GitHub
+                    </a>
                 </div>
             </div>
         </div>

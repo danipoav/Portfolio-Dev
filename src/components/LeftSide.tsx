@@ -22,12 +22,13 @@ export default function LeftSide() {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
+                    console.log("Observed entry:", entry.target.id, entry.isIntersecting);
                     if (entry.isIntersecting) {
                         setActiveSection(entry.target.id);
                     }
                 })
             },
-            { threshold: 0.6 }
+            { threshold: 0 }
         );
 
         sections.forEach((section) => observer.observe(section));
@@ -69,7 +70,7 @@ export default function LeftSide() {
                         </span>
                     </li>
                     <li
-                        onClick={() => scrollToSection('about')}
+                        onClick={() => scrollToSection('experience')}
                         className="relative w-1/2 inline-block py-2 cursor-pointer hover:text-white transition-all duration-300 ease-in-out hover:translate-x-1">
                         <span
                             className={`after:content-[''] after:block after:h-[2px] after:bg-white after:transition-all after:duration-300 ${activeSection === 'experience' ? 'text-white after:w-full translate-x-1' : 'after:w-0'}`}>
