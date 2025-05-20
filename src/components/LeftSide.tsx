@@ -28,7 +28,7 @@ export default function LeftSide() {
                     }
                 })
             },
-            { threshold: 0 }
+            { threshold: 0.6 }
         );
 
         sections.forEach((section) => observer.observe(section));
@@ -49,7 +49,7 @@ export default function LeftSide() {
 
             <h2 className=" text-2xl pt-4 font-semibold">Full Stack Engineer</h2>
 
-            <h3 className=" text-lg pt-3 text-gray-400 pr-50">I build accessible, pixel-perfect digital experiences for the web.</h3>
+            <h3 className=" text-lg pt-3 text-gray-400 pr-50">I build full-stack web applications with modern technologies, focusing on performance, usability, and clean design.</h3>
 
             <div className="py-18">
                 <ul className="flex flex-col uppercase text-sm font-bold text-gray-400">
