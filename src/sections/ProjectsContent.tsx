@@ -4,7 +4,7 @@ export default function ProjectsContent() {
 
   const projects = [
     {
-      title: "Hotel Management Dashboard",
+      title: "Hotel Management Reservation",
       description: "A full-stack hotel management system built with Laravel, featuring CRUD operations for bookings, rooms, and users, with authentication and role-based access control.",
       video: "../../Hotel.mp4",
       url: "http://13.37.222.106/",
@@ -20,9 +20,9 @@ export default function ProjectsContent() {
       techStack: ["React", "TailwindCSS", "Redux", "TypeScript", "MySQL"],
     },
     {
-      title: "Hotel Management Dashboard",
+      title: "Dashboard Management",
       description: "A full-featured admin dashboard for managing hotel operations. Includes user authentication, CRUD functionalities for bookings, users, and rooms, with real-time status indicators and a responsive interface.",
-      video: "../../Subs-2.mp4",
+      video: "../../Dashboard.mp4",
       url: "http://hotel-db.s3-website.eu-west-3.amazonaws.com/",
       repo: "https://github.com/danipoav/DB-hotel",
       techStack: ["React", "TypeScript", "Redux Toolkit", "REST API", "Laravel (Backend)"],
