@@ -21,7 +21,7 @@ export default function ExperienceContent() {
 
     return (
         <section id='experience' className='scroll-mt-10 mb-20'>
-            
+            <h1 className="uppercase text-gray-200 text-ls font-bold mb-10 md:hidden">Experience</h1>
             {experience.map((exp, i) => (
                 <ExperienceCard key={i} {...exp} />
             ))}
