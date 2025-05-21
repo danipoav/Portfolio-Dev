@@ -44,14 +44,14 @@ export default function LeftSide() {
     };
 
     return (
-        <div className=" pl-85 py-18 ">
-            <h1 className={`text-6xl font-bold ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Daniel Poveda</h1>
+        <div className=" pt-10 md:pl-85 md:py-18 ">
+            <h1 className={`text-4xl font-bold md:text-6xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Daniel Poveda</h1>
 
-            <h2 className=" text-2xl pt-4 font-semibold">Full Stack Engineer</h2>
+            <h2 className=" text-xl md:text-2xl pt-4 font-semibold">Full Stack Engineer</h2>
 
-            <h3 className=" text-lg pt-3 text-gray-400 pr-50">I build full-stack web applications with modern technologies, focusing on performance, usability, and clean design.</h3>
+            <h3 className=" md:text-lg pt-2 md:pt-3 text-gray-400 md:pr-50">I build full-stack web applications with modern technologies, focusing on performance, usability, and clean design.</h3>
 
-            <div className="py-18">
+            <div className="py-18 hidden md:block">
                 <ul className="flex flex-col uppercase text-sm font-bold text-gray-400">
                     <li
                         onClick={() => scrollToSection('about')}
@@ -81,7 +81,7 @@ export default function LeftSide() {
             </div>
 
 
-            <div className="mt-60 flex gap-4 text-3xl">
+            <div className=" mt-10 md:mt-60 flex gap-4 text-2xl md:text-3xl">
                 {icons.map((item, index) => (
                     <a
                         key={index}
