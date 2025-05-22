@@ -12,7 +12,7 @@ export default function SpotlightLayout({ children }: { children: React.ReactNod
   }, []);
 
   return (
-    <div className="relative w-full h-full bg-gray-800 overflow-hidden">
+    <div className="relative w-full h-full bg-gray-800 md:overflow-hidden">
       <div
         className="pointer-events-none fixed top-0 left-0 w-full h-full z-50"
         style={{

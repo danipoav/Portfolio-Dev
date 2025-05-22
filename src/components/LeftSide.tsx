@@ -22,7 +22,6 @@ export default function LeftSide() {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    console.log("Observed entry:", entry.target.id, entry.isIntersecting);
                     if (entry.isIntersecting) {
                         setActiveSection(entry.target.id);
                     }

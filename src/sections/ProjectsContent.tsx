@@ -31,7 +31,7 @@ export default function ProjectsContent() {
 
   return (
     <section id="projects" className="scroll-mt-2 mb-25 ">
-      <h1 className="uppercase text-gray-200 text-ls font-bold mb-10 md:hidden">Projects</h1>
+      <h1 className="uppercase border-b border-gray-500 pb-2 sticky top-0 py-4 bg-gray-900 text-gray-200 text-ls font-bold mb-8 md:hidden">Projects</h1>
       {projects.map((project, i) => (
         <ProjectCard key={i} {...project} />
       ))}

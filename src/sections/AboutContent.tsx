@@ -2,7 +2,7 @@
 export default function AboutContent() {
     return (
         <section id="about" className="scroll-mt-24">
-            <h1 className="uppercase text-gray-200 text-ls font-bold mb-10 md:hidden">About</h1>
+            <h1 className="sticky top-0 z-10 uppercase py-4 bg-gray-900 border-b pb-2 border-gray-500 text-gray-200 text-ls font-bold mb-5 md:hidden ">About</h1>
             <h1 className="text-gray-400 text-justify mb-4 flex text-sm md:text-base">
                 <div>
                 I'm a <span className="text-white hover:text-blue-200">passionate</span> and <span className="text-white">dedicated</span> web developer who thrives on turning ideas into engaging, user-friendly digital experiences. With a strong sense of curiosity and a deep commitment to learning, I’ve spent the last few years honing my craft by building and refining a variety of projects from personal experiments to collaborative products.
@@ -14,7 +14,7 @@ export default function AboutContent() {
             <h1 className="text-gray-400 text-justify mb-4 text-sm md:text-base">
                 Throughout my journey, I have grown into someone who values both <span className="text-white">detail</span> and <span className="text-white">big-picture thinking</span>. I enjoy working independently just as much as being part of a team, where exchanging ideas and solving problems together often leads to better results.
             </h1>
-            <h1 className="text-gray-400 text-justify mb-20 md:mb-38 text-sm md:text-base">
+            <h1 className="text-gray-400 text-justify mb-17 md:mb-38 text-sm md:text-base">
                 My goal is always the same: to contribute to projects that <span className="text-white">inspire</span>, <span className="text-white">challenge</span>, and have a <span className="text-white">positive impact</span>.
                 I'm always exploring <span className="text-white">new ideas</span>, seeking <span className="text-white">opportunities to grow</span>, and striving to deliver high-quality work that reflects both my skills and my <span className="text-white">dedication</span>. This portfolio is a reflection of my journey as a developer — and I'm excited about what lies ahead.
             </h1>
