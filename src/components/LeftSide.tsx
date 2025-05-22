@@ -43,7 +43,7 @@ export default function LeftSide() {
     };
 
     return (
-        <div className=" pt-10 md:pl-85 md:py-18 ">
+        <div className=" pt-10 lg:pl-[37%] md:py-18 ">
             <h1 className={`text-4xl font-bold md:text-6xl transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Daniel Poveda</h1>
 
             <h2 className={`text-xl md:text-2xl pt-4 font-semibold transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>Full Stack Engineer</h2>

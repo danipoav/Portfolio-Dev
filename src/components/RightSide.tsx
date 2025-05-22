@@ -4,7 +4,7 @@ import ProjectsContent from "../sections/ProjectsContent";
 
 export default function RightSide() {
   return (
-    <div className="pt-10 px-6 md:pt-18 md:pr-85">
+    <div className="pt-10 px-6 md:pt-18 md:pr-0 lg:pr-[37%]">
       <AboutContent />
       <ProjectsContent />
       <ExperienceContent />
