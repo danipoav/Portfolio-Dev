@@ -1,6 +1,13 @@
+import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard"
 
 export default function ProjectsContent() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setIsVisible(true), 500)
+  }, [])
 
   const projects = [
     {
@@ -30,7 +37,7 @@ export default function ProjectsContent() {
   ]
 
   return (
-    <section id="projects" className="scroll-mt-2 mb-25 ">
+    <section id="projects" className={`scroll-mt-2 mb-25 transition-all duration-1000 delay-900 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
       <h1 className="uppercase border-b border-gray-500 pb-2 sticky top-0 py-4 bg-gray-900 text-gray-200 text-ls font-bold mb-8 md:hidden">Projects</h1>
       {projects.map((project, i) => (
         <ProjectCard key={i} {...project} />

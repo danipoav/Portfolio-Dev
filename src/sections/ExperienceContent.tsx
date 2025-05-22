@@ -1,6 +1,13 @@
+import { useEffect, useState } from 'react';
 import ExperienceCard from './ExperienceCard'
 
 export default function ExperienceContent() {
+
+    const [isVisible, setIsVisible] = useState(false);
+    
+      useEffect(() => {
+        setTimeout(() => setIsVisible(true), 500)
+      }, [])
 
     const experience = [
         {
@@ -20,7 +27,7 @@ export default function ExperienceContent() {
     ]
 
     return (
-        <section id='experience' className='scroll-mt-10 mb-15 md:mb-20'>
+        <section id='experience' className={`scroll-mt-10 mb-15 md:mb-20 transition-all duration-1000 delay-900 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
             <h1 className="sticky top-0 z-10 bg-gray-900 border-b border-gray-500 py-4 pb-2 uppercase text-gray-200 text-ls font-bold mb-10 md:hidden">Experience</h1>
             {experience.map((exp, i) => (
                 <ExperienceCard key={i} {...exp} />
